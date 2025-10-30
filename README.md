@@ -28,10 +28,6 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-### Links
-
-- Solution URL: [Solution](https://github.com/socratesioa/room-homepage)
-- Live Site URL: [Live Site](https://socratesioa.github.io/room-homepage)
 
 ## My process
 
@@ -55,5 +51,4 @@ Putting together all the different things I practiced in previous challenges is 
 
 ## Author
 
-- Website - [My Portfolio](https://portfolio.thisissocrates.com/)
-- Frontend Mentor - [@socratesioa](https://www.frontendmentor.io/profile/socratesioa)
+- Frontend Mentor - [@Umarcss](https://www.frontendmentor.io/profile/Umarcss)
