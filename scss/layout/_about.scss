@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+@use "../base/typography" as typo;
+
+#about {
+  display: grid;
+  gap: 48px;
+  @include respond(xl, min) {
+    grid-template-columns: 420px auto 440px;
+  }
+}
+
+.about-text {
+  display: grid;
+  gap: 16px;
+  padding: 0 32.5px;
+  @include respond(small, min) {
+    padding: 0 64px;
+  }
+  @include respond(xl, min) {
+    padding: 16px 0;
+    place-content: center;
+  }
+}

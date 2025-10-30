@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+@use "../base/typography" as typo;
+
+.slider-text {
+  display: grid;
+  gap: 16px;
+  padding: 64px 32.5px;
+  @include respond(small, min) {
+    padding: 64px;
+  }
+  @include respond(xl, min) {
+    height: 100%;
+    place-content: center;
+  }
+}

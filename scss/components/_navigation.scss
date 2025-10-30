@@ -1,0 +1,49 @@
+@use "../abstracts" as *;
+@use "../base/typography" as typo;
+
+nav {
+  display: none;
+  @include respond(xl, min) {
+    display: block;
+  }
+}
+
+nav.active {
+  position: absolute;
+  z-index: 102;
+  display: block;
+  top: 48px;
+  right: 24px;
+  @include respond(small, min) {
+    right: 64px;
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-link {
+  @include text-preset(typo.$text-preset-3-semibold);
+  text-decoration: none;
+  text-transform: lowercase;
+  color: $clr-body-text-dark;
+  @include respond(xl, min) {
+    color: $clr-body-bg;
+    position: relative;
+  }
+}
+
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: $clr-body-bg;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+}

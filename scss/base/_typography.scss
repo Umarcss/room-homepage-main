@@ -1,0 +1,82 @@
+@use "../abstracts" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+$font-body: "DM Sans", sans-serif;
+
+$text-preset-1: (
+  family: $font-body,
+  size: 48px,
+  lineHeight: 0.9,
+  letterSpacing: -2px,
+  weight: 600,
+);
+
+$text-preset-2: (
+  family: $font-body,
+  size: 40px,
+  lineHeight: 1,
+  letterSpacing: -2px,
+  weight: 600,
+);
+
+$text-preset-3-bold: (
+  family: $font-body,
+  size: 16px,
+  lineHeight: 1.4,
+  letterSpacing: 7px,
+  weight: 700,
+);
+
+$text-preset-3-bold-mobile: (
+  family: $font-body,
+  size: 14px,
+  lineHeight: 1.4,
+  letterSpacing: 5.83px,
+  weight: 700,
+);
+
+$text-preset-3-semibold: (
+  family: $font-body,
+  size: 16px,
+  lineHeight: 1,
+  letterSpacing: -0.7px,
+  weight: 600,
+);
+
+$text-preset-3-medium: (
+  family: $font-body,
+  size: 16px,
+  lineHeight: 1.4,
+  letterSpacing: -0.5px,
+  weight: 500,
+);
+
+$text-preset-4: (
+  family: $font-body,
+  size: 15px,
+  lineHeight: 1,
+  letterSpacing: 12.5px,
+  weight: 500,
+);
+
+h1 {
+  color: $clr-body-text-dark;
+  @include text-preset($text-preset-2);
+  @include respond(small, min) {
+    @include text-preset($text-preset-1);
+  }
+}
+
+h2 {
+  color: $clr-body-text-dark;
+  @include text-preset($text-preset-3-bold-mobile);
+  text-transform: uppercase;
+  @include respond(small, min) {
+    @include text-preset($text-preset-3-bold);
+  }
+}
+
+p {
+  @include text-preset($text-preset-3-medium);
+}

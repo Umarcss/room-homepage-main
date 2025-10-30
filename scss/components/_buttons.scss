@@ -1,0 +1,72 @@
+@use "../abstracts" as *;
+@use "../base/typography" as typo;
+
+.menuToggle {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menuToggle:focus-visible {
+  outline-offset: 4px;
+  outline: 2px solid $clr-body-text-dark;
+  border-radius: 2px;
+}
+
+#menuToggle {
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  z-index: 101;
+  display: block;
+  top: 48.47px;
+  left: 24px;
+  @include respond(small, min) {
+    left: 64px;
+  }
+  @include respond(xl, min) {
+    display: none;
+  }
+}
+
+.shop-btn {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  @include text-preset(typo.$text-preset-4);
+  color: $clr-body-text-dark;
+  text-transform: uppercase;
+  @include respond(small, min) {
+    width: 226px;
+    margin-top: 8px;
+  }
+}
+
+.shop-btn:hover,
+.shop-btn:focus-visible {
+  color: $clr-body-text-light;
+}
+
+.slider-nav {
+  border: none;
+  outline: none;
+  background-color: $clr-body-text-dark;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  @include respond(small, min) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.slider-nav:hover,
+.slider-nav:focus-visible {
+  background-color: $clr-button-hover;
+}

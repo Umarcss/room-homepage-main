@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+.slider-image,
+.about-img-light,
+.about-img-dark {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.about-img-dark {
+  @include respond(small, min) {
+    height: 300px;
+  }
+  @include respond(xl, min) {
+    height: 266px;
+  }
+}
+
+.about-img-light {
+  @include respond(small, min) {
+    height: 243px;
+  }
+  @include respond(xl, min) {
+    width: 100%;
+    height: 266px;
+  }
+}
+
+.slider-image {
+  height: 400px;
+  @include respond(xl, min) {
+    height: 534px;
+    width: 100%;
+  }
+}
+
+.slider-arrow {
+  display: block;
+}

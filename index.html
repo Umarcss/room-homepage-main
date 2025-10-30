@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Room homepage</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header>
+        <div class="header-container">
+          <button
+            type="button"
+            id="menuToggle"
+            class="menuToggle"
+            aria-label="Open Navigation Menu"
+          >
+            <img
+              src="./images/icon-hamburger.svg"
+              class="mobile-menu-icon"
+              alt=""
+            />
+          </button>
+
+          <img
+            src="./images/logo.svg"
+            width="62"
+            height="13"
+            class="logo"
+            alt="Room Logo"
+            loading="eager"
+            decoding="async"
+          />
+          <nav>
+            <ul>
+              <li><a href="#" class="nav-link">Home</a></li>
+              <li><a href="#" class="nav-link">Shop</a></li>
+              <li><a href="#" class="nav-link">About</a></li>
+              <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="overlay" aria-hidden="true"></div>
+      <main>
+        <section id="hero" aria-label="Hero image slider">
+          <div class="slider-wrapper">
+            <!-- Slide 1 -->
+            <div class="slider" aria-hidden="false">
+              <div class="image-wrapper">
+                <picture>
+                  <source
+                    srcset="./images/desktop-image-hero-1.jpg"
+                    media="(min-width: 600px)"
+                  />
+                  <img
+                    src="./images/mobile-image-hero-1.jpg"
+                    class="slider-image"
+                    alt="Kitchen table with chairs and bonsai tree"
+                    width="375"
+                    height="360"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </picture>
+                <div class="slider-buttons-wrapper">
+                  <button
+                    type="button"
+                    class="slider-nav prev"
+                    aria-label="Go to previous slide"
+                  >
+                    <img
+                      src="./images/icon-angle-left.svg"
+                      class="slider-arrow"
+                      alt=""
+                      width="9"
+                      height="17"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    class="slider-nav next"
+                    aria-label="Go to next slide"
+                  >
+                    <img
+                      src="./images/icon-angle-right.svg"
+                      class="slider-arrow"
+                      alt=""
+                      width="9"
+                      height="17"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <div class="slider-text">
+                <h1>Discover innovative ways to decorate</h1>
+                <p>
+                  We provide unmatched quality, comfort, and style for property
+                  owners across the country. Our experts combine form and
+                  function in bringing your vision to life. Create a room in
+                  your own style with our collection and make your property a
+                  reflection of you and what you love.
+                </p>
+                <a
+                  href="#hero"
+                  class="shop-btn"
+                  aria-label="Shop now and explore our collection"
+                  >Shop now
+                  <span aria-hidden="true"
+                    ><svg
+                      width="40"
+                      height="12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                        fill="currentColor"
+                        fill-rule="nonzero"
+                      /></svg></span
+                ></a>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slider" aria-hidden="true" tabindex="-1">
+              <div class="image-wrapper">
+                <picture>
+                  <source
+                    srcset="./images/desktop-image-hero-2.jpg"
+                    media="(min-width: 600px)"
+                  />
+                  <img
+                    src="./images/mobile-image-hero-2.jpg"
+                    class="slider-image"
+                    alt="Different colors of chairs"
+                    width="375"
+                    height="360"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </picture>
+                <div class="slider-buttons-wrapper">
+                  <button
+                    type="button"
+                    class="slider-nav prev"
+                    aria-label="Go to previous slide"
+                  >
+                    <img
+                      src="./images/icon-angle-left.svg"
+                      class="slider-arrow"
+                      alt=""
+                      width="9"
+                      height="17"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    class="slider-nav next"
+                    aria-label="Go to next slide"
+                  >
+                    <img
+                      src="./images/icon-angle-right.svg"
+                      class="slider-arrow"
+                      alt=""
+                      width="9"
+                      height="17"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <div class="slider-text">
+                <h1>We are available all across the globe</h1>
+                <p>
+                  With stores all over the world, it's easy for you to find
+                  furniture for your home or place of business. Locally, we’re
+                  in most major cities throughout the country. Find the branch
+                  nearest you using our store locator. Any questions? Don't
+                  hesitate to contact us today.
+                </p>
+                <a
+                  href="#hero"
+                  class="shop-btn"
+                  aria-label="Shop now and explore our collection"
+                  >Shop now
+                  <span aria-hidden="true"
+                    ><svg
+                      width="40"
+                      height="12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                        fill="currentColor"
+                        fill-rule="nonzero"
+                      /></svg></span
+                ></a>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slider" aria-hidden="true" tabindex="-1">
+              <div class="image-wrapper">
+                <picture>
+                  <source
+                    srcset="./images/desktop-image-hero-3.jpg"
+                    media="(min-width: 600px)"
+                  />
+                  <img
+                    src="./images/mobile-image-hero-3.jpg"
+                    class="slider-image"
+                    alt="Black stylish chair"
+                    width="375"
+                    height="360"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </picture>
+                <div class="slider-buttons-wrapper">
+                  <button
+                    type="button"
+                    class="slider-nav prev"
+                    aria-label="Go to previous slide"
+                  >
+                    <img
+                      src="./images/icon-angle-left.svg"
+                      class="slider-arrow"
+                      alt=""
+                      width="9"
+                      height="17"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    class="slider-nav next"
+                    aria-label="Go to next slide"
+                  >
+                    <img
+                      src="./images/icon-angle-right.svg"
+                      class="slider-arrow"
+                      alt=""
+                      width="9"
+                      height="17"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <div class="slider-text">
+                <h1>Manufactured with the best materials</h1>
+                <p>
+                  Our modern furniture store provide a high level of quality.
+                  Our company has invested in advanced technology to ensure that
+                  every product is made as perfect and as consistent as
+                  possible. With three decades of experience in this industry,
+                  we understand what customers want for their home and office.
+                </p>
+                <a
+                  href="#hero"
+                  class="shop-btn"
+                  aria-label="Shop now and explore our collection"
+                  >Shop now
+                  <span aria-hidden="true"
+                    ><svg
+                      width="40"
+                      height="12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                        fill="currentColor"
+                        fill-rule="nonzero"
+                      /></svg></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about" aria-labelledby="about-heading">
+          <img
+            src="./images/image-about-dark.jpg"
+            class="about-img-dark"
+            alt="Cozy room with armchairs and coffee table"
+            width="375"
+            height="227"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="about-text">
+            <h2 id="about-heading">About our furniture</h2>
+            <p>
+              Our multifunctional collection blends design and function to suit
+              your individual taste. Make each room unique, or pick a cohesive
+              theme that best express your interests and what inspires you. Find
+              the furniture pieces you need, from traditional to contemporary
+              styles or anything in between. Product specialists are available
+              to help you create your dream space.
+            </p>
+          </div>
+
+          <img
+            src="./images/image-about-light.jpg"
+            class="about-img-light"
+            alt="Chair in a room"
+            width="375"
+            height="227"
+            loading="lazy"
+            decoding="async"
+          />
+        </section>
+      </main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

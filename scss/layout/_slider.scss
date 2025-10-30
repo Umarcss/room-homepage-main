@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  @include respond(xl, min) {
+    display: grid;
+    grid-template-columns: auto 600px;
+  }
+}
+
+.slider.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.slider-buttons-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  @include respond(xl, min) {
+    right: -160px;
+  }
+}

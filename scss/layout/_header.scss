@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+@use "../base/typography" as typo;
+
+.header-container {
+  @include respond(xl, min) {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+    padding: 64px;
+    position: absolute;
+    z-index: 100;
+  }
+}
+
+header.menu-open {
+  background-color: $clr-body-bg;
+  height: 110px;
+  position: absolute;
+  inset: 0;
+  z-index: 101;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 48px;
+  transform: translateX(-50%);
+  z-index: 101;
+  @include respond(xl, min) {
+    left: unset;
+    transform: unset;
+    position: unset;
+  }
+}
